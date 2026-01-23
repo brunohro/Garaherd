@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+:root {
+    --color-gradient: #ED4D18;
+    --color-black: #FF9A3C;
+    --color-black-light: #000;
+    --color-gray: #fff;
+} 
+
+body {
+  background: #0d0d0d;
+  color: #fff;
+}
+
+/* imagem de fundo */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  background: linear-gradient(45deg, #0B0B0B, #1A0D0C, #AA2315);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+.hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 0;
+}
+
+
+
+/* container */
+
+.hero-container {
+  max-width: 1100px;
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 100%;
+  display: flex;
+  gap: 60px;
+  align-items: center;
+}
+
+/* Produto */
+
+.product {
+  position: relative;
+  width: 360px;
+  margin: auto;
+}
+
+.product img {
+  position: absolute;
+  max-width: 100%;
+  pointer-events: none;
+}
+
+.light {
+  top: -80px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 420px;
+  z-index: 1;
+  opacity: 0.9;
+}
+
+.bottle {
+  position: absolute;
+  z-index: 5;
+  width: 580px;
+  display: block;
+  margin: auto;
+}
+
+.leaf {
+  width: 60px;
+  z-index: 4;
+}
+
+.leaf-1 {
+  top: 120px;
+  left: -20px;
+  transform: rotate(-20deg);
+}
+
+.leaf-2 {
+  bottom: 80px;
+  right: -25px;
+  transform: rotate(30deg);
+}
+
+.pill {
+  width: 55px;
+  z-index: 3;
+}
+
+.pill-1 {
+  top: 150px;
+  left: -35px;
+  transform: rotate(-30deg);
+}
+
+.pill-2 {
+  bottom: 130px;
+  right: -40px;
+  transform: rotate(25deg);
+}
+
+
+/* Conteúdo */
+.content {
+  max-width: 500px;
+  text-align: start;
+  margin-top: 15rem;
+}
+
+.text-gradient {
+  background: linear-gradient(45deg, #FF4747, #F6E323);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+.badge {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: #ff6a00;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+h1 {
+  font-size: 38px;
+  line-height: 1.2;
+  margin-bottom: 20px;
+}
+
+.span {
+ background: linear-gradient(90deg, #ffcc00, #ffea00);
+}
+
+p {
+  font-size: 16px;
+  color: #ccc;
+  margin-bottom: 25px;
+}
+
+.benefits {
+  list-style: none;
+  margin-bottom: 30px;
+}
+
+.benefits li {
+  margin-bottom: 10px;
+  font-size: 15px;
+  color: #9cff57;
+}
+
+/* Botão */
+.cta {
+  background: linear-gradient(90deg, #ffcc00, #ffea00);
+  color: #000;
+  font-weight: bold;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 30px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.cta:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 234, 0, 0.6);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .hero-container {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .product img {
+    max-width: 260px;
+  }
+}

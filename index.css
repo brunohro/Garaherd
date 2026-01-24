@@ -123,6 +123,7 @@ body {
   max-width: 500px;
   text-align: start;
   margin-top: 15rem;
+  padding: 10px 40px;
 }
 
 .text-gradient {
@@ -179,6 +180,11 @@ p {
   font-size: 16px;
   cursor: pointer;
   transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+}
+
+.cta p {
+  color: var(--color-black);
 }
 
 .cta:hover {
@@ -200,7 +206,7 @@ p {
 
 
 
-/* Section */ 
+/* Frame */ 
 .frame {
   background-color: var(--color-yellow);
 }
@@ -237,3 +243,28 @@ p {
   height: 1px;
   background-color: rgba(0, 0, 0, 0.25);;
 }
+
+/* sobre */
+
+.sobre {
+}
+
+.product-stamp img {
+  margin: auto;
+  padding: 0;
+  position: relative;
+  width: 100%;
+}
+
+
+.content-on {
+  max-width: 500px;
+  text-align: start;
+  padding: 10px 65px; 
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: -30px;
+  position: absolute;
+}
+

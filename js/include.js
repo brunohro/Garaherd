@@ -6,3 +6,4 @@ async function loadSection(id, file) {
 
 loadSection("hero", "sections/hero.html");
 loadSection("frame", "sections/frame.html");
+loadSection("sobre", "sections/sobre.html");

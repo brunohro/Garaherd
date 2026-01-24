@@ -6,15 +6,16 @@
 }
 
 :root {
-    --color-gradient: #ED4D18;
-    --color-black: #FF9A3C;
-    --color-black-light: #000;
-    --color-gray: #fff;
+    --color-yellow: #F7C417;
+    --color-black: #0B0B0B;
+    --color-black-light: #1A1A1A;
+    --color-gray: #C9C9C9;
+    --color-white: #FFFFFF;
 } 
 
 body {
   background: #0d0d0d;
-  color: #fff;
+  color: var(--color-white);
 }
 
 /* imagem de fundo */
@@ -195,4 +196,44 @@ p {
   .product img {
     max-width: 260px;
   }
+}
+
+
+
+/* Section */ 
+.frame {
+  background-color: var(--color-yellow);
+}
+
+.benefits {
+  max-width: 500px;
+  padding: 10px 65px;
+  margin: auto;
+}
+
+.benefit {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 15px 0;
+}
+
+.benefit p {
+  color: var(--color-black);
+}
+
+.benefit img {
+  width: 48px;
+  height: 48px;
+}
+
+.benefit p {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.3;
+}
+
+.divider {
+  height: 1px;
+  background-color: rgba(0, 0, 0, 0.25);;
 }

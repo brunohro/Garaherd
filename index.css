@@ -265,6 +265,39 @@ p {
   flex-direction: column;
   gap: 10px;
   margin-top: -30px;
+  position: relative;
+}
+
+/* About */
+
+.about-benefits {
+  margin-top: 50px;
+}
+
+.content-about {
+  max-width: 500px;
+  padding: 10px 65px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checklist {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.product-about {
   position: absolute;
+  z-index: 2;
+  margin-top: 25px;
+}
+
+.flash {
+  position: relative;
+  z-index: 1;
+  margin-top: -45px;
 }
 

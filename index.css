@@ -11,6 +11,7 @@
     --color-black-light: #1A1A1A;
     --color-gray: #C9C9C9;
     --color-white: #FFFFFF;
+    --color-gray-dark: #606060;
 } 
 
 body {
@@ -335,5 +336,98 @@ p {
   position: relative;
   z-index: 1;
   margin-top: -45px;
+}
+
+
+/* preços */
+
+.precos {
+  background-color: var(--color-gray);
+}
+
+.frame-precos {
+  max-width: 1210px;
+  margin: auto;
+  padding: 50px 65px;
+  align-items: center;
+}
+
+.frame-precos h1 {
+  color: var(--color-black);
+  text-align: center;
+  font-size: 40px;
+}
+
+.frame-precos p {
+  color: var(--color-black-light);
+  font-size: 20px;
+  text-align: center;
+}
+
+/* cards */ 
+
+.cards {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card-secundary {
+  flex: 1;
+  background: var(--color-white);
+  width: 320px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.card-secundary-top {
+  margin: 0;
+  background-color: var(--color-black);
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card-secundary-top p {
+  color: var(--color-white);
+  padding: 8px;
+}
+
+.product-quant * {
+  margin: 0;
+  padding: 0;
+  color: var(--color-black);
+  text-align: center;
+  font-size: 32px;
+}
+
+.product-quant p{ 
+  color: var(--color-gray-dark);
+  font-size: 24px;
+  margin-top: 0;
+}
+
+.products {
+  position: relative;
+  margin: 0 auto;
+}
+
+.products-one{
+  position: relative;
+  width: 260px;
+  top: 10px;
+  left: 40px;
+  z-index: 1;
+}
+
+.products-two{
+  position: absolute;
+  width: 260px;
+  top: 20px;
+  left: 60px;
+  z-index: 2;
 }
 

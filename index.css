@@ -286,6 +286,7 @@ p {
 .sobre {
 }
 
+
 .product-stamp img {
   margin: auto;
   padding: 0;
@@ -303,6 +304,7 @@ p {
   gap: 10px;
   margin-top: -30px;
   position: relative;
+  margin: auto;
 }
 
 /* About */
@@ -317,6 +319,7 @@ p {
   display: flex;
   flex-direction: column;
   gap: 10px;
+  margin: auto;
 }
 
 .checklist {
@@ -431,3 +434,60 @@ p {
   z-index: 2;
 }
 
+
+/* ingredients */
+
+.ingredients {
+  background-color: var(--color-white);
+}
+
+.ingredients-content {
+  color: var(--color-black);
+  max-width: 500px;
+  padding: 60px 65px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 60px;
+}
+
+.ingredients-title{
+  flex: 1;
+  text-align: center;
+  max-width: 742px;
+  margin: 0 auto;
+  color: var(--color-black);
+}
+
+.ingredients-cards {
+  flex: 1;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin: 0;
+}
+
+.ingredients-card {
+  background-color: var(--color-black-light);
+  color: var(--color-white);
+  border-radius: 12px;
+  max-width: 320px;
+  text-align: center;
+  padding: 70px 30px;
+}
+
+.button-ingredients {
+  max-width: 396px;
+  margin: auto;
+}
+
+.button-ingredients:hover {
+  transform: scale(1.05);
+}
+
+@media (min-width: 768px) {
+  .ingredients-content {
+    max-width: 1216px;
+  }
+}

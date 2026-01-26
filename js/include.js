@@ -9,4 +9,5 @@ loadSection("frame", "sections/frame.html");
 loadSection("precos", "sections/precos.html"); 
 loadSection("sobre", "sections/sobre.html");
 loadSection("about-benefits", "sections/about_beneficios.html");
+loadSection("ingredients", "sections/ingredients.html");
 

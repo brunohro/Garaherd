@@ -11,4 +11,5 @@ loadSection("sobre", "sections/sobre.html");
 loadSection("about-benefits", "sections/about_beneficios.html");
 loadSection("ingredients", "sections/ingredients.html");
 loadSection("relatos", "sections/relatos.html");
+loadSection("frete", "sections/frete.html");
 

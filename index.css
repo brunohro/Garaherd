@@ -491,3 +491,66 @@ p {
     max-width: 1216px;
   }
 }
+
+
+/* relatos */
+
+.relatos {
+  background-color: var(--color-white);
+}
+
+.relatos-content {
+  color: var(--color-black);
+  max-width: 500px;
+  padding: 60px 65px;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+  gap: 60px;
+}
+
+.relatos-cards {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  padding: 40px 0;
+  gap: 20px;
+}
+
+.relatos-card {
+  width: 281px;
+  background-color: #fff;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+}
+
+
+.relatos-card img {
+  width: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+
+.relatos-text{
+  text-align: center;
+  padding: 5px;
+}
+
+.relatos-title {
+  color: var(--color-black);
+  text-align: center;
+  max-width: 892px;
+  margin: auto;
+}
+
+.relatos-title span {
+  color: var(--color-yellow);
+}
+
+@media (min-width: 768px) {
+  .relatos-content {
+    max-width: 1218px;
+  }
+}

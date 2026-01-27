@@ -304,6 +304,11 @@ p {
 .sobre {
 }
 
+.sobre-content { 
+    flex: 1;
+    margin: auto;
+    max-width: 1218px;
+  }
 
 .product-stamp img {
   margin: auto;
@@ -311,7 +316,6 @@ p {
   position: relative;
   width: 100%;
 }
-
 
 .content-on {
   max-width: 500px;
@@ -323,6 +327,19 @@ p {
   margin-top: -30px;
   position: relative;
   margin: auto;
+}
+@media (min-width: 768px) {
+  .content-on {
+    max-width: 1218px;
+    flex-wrap: wrap;
+  }
+  .sobre-content { 
+    display: flex;
+  }
+  .product-stamp img {
+    height: 100%;
+    width: 500px;
+}
 }
 
 /* About */

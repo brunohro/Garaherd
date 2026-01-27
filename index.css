@@ -12,6 +12,8 @@
     --color-gray: #C9C9C9;
     --color-white: #FFFFFF;
     --color-gray-dark: #606060;
+    --color-red:#AA2315;
+    --color-creme: #FFF1C0;
 } 
 
 body {
@@ -370,18 +372,30 @@ p {
 /* cards */ 
 
 .cards {
-  flex: 1;
+
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   padding: 40px;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 10px;
+  align-items: flex-end;
+  margin: auto;
 }
 
 .card-secundary {
   flex: 1;
   background: var(--color-white);
-  width: 320px;
+  max-width: 382px;
+  max-height: 812px;
+  text-align: center;
+  border-radius: 12px;
+}
+
+.card-primary {
+  flex: 1;
+  background: var(--color-creme);
+  max-width: 382px;
+  max-height: 841px;
   text-align: center;
   border-radius: 12px;
 }
@@ -394,7 +408,20 @@ p {
   border-top-right-radius: 12px;
 }
 
+.card-primary-top {
+  margin: 0;
+  background: linear-gradient(to right, var(--color-red), var(--color-yellow));
+  width: 100%;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
 .card-secundary-top p {
+  color: var(--color-white);
+  padding: 8px;
+}
+
+.card-primary-top p {
   color: var(--color-white);
   padding: 8px;
 }
@@ -414,25 +441,101 @@ p {
 }
 
 .products {
-  position: relative;
-  margin: 0 auto;
+
 }
 
-.products-one{
-  position: relative;
-  width: 260px;
-  top: 10px;
-  left: 40px;
-  z-index: 1;
+.products img {
+  max-width: 280px;
+  max-height: 280px;
 }
 
-.products-two{
-  position: absolute;
-  width: 260px;
-  top: 20px;
-  left: 60px;
-  z-index: 2;
+
+.precos-valor {
+  display: flex;
+  align-items: baseline;
+  margin: auto;
+  justify-content: center;
 }
+
+.precos-valor h1{
+  font-size: 64px;
+}
+
+.precos-list {
+  color: var(--color-black);
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  margin: auto;
+  list-style: none;
+  color: var(--color-gray-dark);
+  gap: 5px;
+  left: 5px;
+}
+
+.precos-list-valor {
+  display: block;
+  padding: 30px 40px;
+}
+
+.precos-icons {
+  display: flex;
+  gap: 5px;
+}
+
+.cards-card {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.precos-total {
+  color: var(--color-gray);
+}
+
+.precos-total {
+  text-align: center;
+}
+
+.precos-total p {
+  font-size: 22px;
+  font-weight: 500;
+  color: #6b7c8a;
+}
+
+.preco-antigo {
+  text-decoration: line-through;
+  text-decoration-color: #e53935; 
+  color: #8fa1af;
+  margin: 0 8px;
+}
+
+.preco-novo {
+  color: #005c8f;
+  font-weight: 700;
+  font-size: 28px;
+}
+
+.borda-gray {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--color-gray);
+  box-sizing: border-box;
+}
+
+.borda-black {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--color-black);
+  box-sizing: border-box;
+}
+
+.borda-red {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--color-red);
+  box-sizing: border-box;
+}
+
 
 
 /* ingredients */
@@ -570,7 +673,7 @@ p {
   justify-content: space-between;
 }
 
-.frete-text h1, p{
+.frete-text h1, p {
   color: var(--color-black);
 }
 

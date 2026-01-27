@@ -23,13 +23,15 @@ body {
 
 /* imagem de fundo */
 .hero {
+  margin: 0;
   position: relative;
-  min-height: 100vh;
   background: linear-gradient(45deg, #0B0B0B, #1A0D0C, #AA2315);
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 40px 20px;
+  padding: 0;
+  overflow: hidden;
+  height: 778px;
 }
 
 .hero::before {
@@ -40,7 +42,12 @@ body {
   z-index: 0;
 }
 
-
+.background {
+  position: absolute;
+  height: 100%;
+  right: -10%;
+  opacity: 0.05;
+}
 
 /* container */
 
@@ -48,8 +55,8 @@ body {
   max-width: 1100px;
   position: relative;
   z-index: 1;
-  width: 100%;
-  max-width: 100%;
+  max-width: 1218px;
+  height: 100%;
   display: flex;
   gap: 60px;
   align-items: center;
@@ -59,14 +66,33 @@ body {
 
 .product {
   position: relative;
-  width: 360px;
-  margin: auto;
+  width: 700px;
+  margin: 0;
+  height: 100%;
 }
 
 .product img {
   position: absolute;
-  max-width: 100%;
+  aspect-ratio: auto;
+  height: 100%;
   pointer-events: none;
+}
+
+img.hero-vector {
+  left: 150px;
+  height: 400px;
+
+}
+
+.benefits {
+  display: flex;
+  flex-direction: column;
+}
+.hero-benefit {
+  flex: 1;
+  display: flex;
+  gap: 5px;
+  
 }
 
 .light {
@@ -123,10 +149,24 @@ body {
 
 /* Conteúdo */
 .content {
-  max-width: 500px;
+  max-width: 700px;
+  color: var(--color-white);
   text-align: start;
   margin-top: 15rem;
   padding: 10px 40px;
+}
+
+.content p {
+  color: var(--color-white);
+}
+
+.content span {
+  font-weight:bold;
+}
+
+.hero-benefits {
+  display: flex;
+  gap: 10px;
 }
 
 .text-gradient {
@@ -167,33 +207,9 @@ p {
 }
 
 .benefits li {
-  margin-bottom: 10px;
-  font-size: 15px;
-  color: #9cff57;
-}
-
-/* Botão */
-.cta {
-  background: linear-gradient(90deg, #ffcc00, #ffea00);
-  color: #000;
-  font-weight: bold;
-  border: none;
-  padding: 15px 30px;
-  border-radius: 30px;
-  font-size: 16px;
-  cursor: pointer;
-  transition: transform 0.2s, box-shadow 0.2s;
   display: flex;
 }
 
-.cta p {
-  color: var(--color-black);
-}
-
-.cta:hover {
-  transform: scale(1.05);
-  box-shadow: 0 0 20px rgba(255, 234, 0, 0.6);
-}
 
 /* Responsivo */
 @media (max-width: 768px) {

@@ -665,6 +665,11 @@ img.product-image {
   color: var(--color-yellow);
 }
 
+.relatos-button {
+  align-items: center;
+  margin: auto;
+}
+
 @media (min-width: 48rem) {
   .relatos-content {
     max-width: 1218px;

@@ -286,25 +286,31 @@ img.product-image {
 }
 
 /* About */
-
 .about-benefits {
-  margin-top: 50px;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: center;
+  align-items: center;
 }
 
 .content-about {
-  max-width: 500px;
-  padding: 10px 65px;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 1rem;
   margin: auto;
+  padding: 1rem;
+  width: 30rem;
 }
 
 .checklist {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 1rem;
   margin-top: 15px;
+}
+
+.checklist p {
+  color: var(--color-white);
 }
 
 .product-about {
@@ -317,6 +323,17 @@ img.product-image {
   position: relative;
   z-index: 1;
   margin-top: -45px;
+}
+
+@media (min-width: 768px) {
+  .about-benefits {
+    flex-direction: row;
+    gap: 5rem;
+
+  }
+  .content-about {
+    width: auto;
+  }
 }
 
 
@@ -770,15 +787,23 @@ img.product-image {
 
 /* FAQ */
 
-
 .faq {
-  width: 100%;
-  max-width: 600px;
+  background-color: var(--color-black-light);
+}
+
+.faq-content {
+  max-width: 1218px;
+  margin: auto;
   text-align: center;
+  padding: 50px;
+}
+
+.faq-info {
+  max-width: 500px;
 }
 
 .faq-tag {
-  color: #f7d600;
+  color: var(--color-yellow);
   font-size: 12px;
   letter-spacing: 2px;
 }
@@ -788,9 +813,15 @@ img.product-image {
   font-size: 28px;
 }
 
+.faq-list {
+  max-width: 934px;
+  margin: auto;
+  align-items: center;
+}
+
 .faq-list details {
-  background: #fff;
-  color: #000;
+  background: var(--color-white);
+  color: var(--color-black);
   border-radius: 6px;
   margin-bottom: 12px;
   overflow: hidden;

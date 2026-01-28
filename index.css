@@ -648,7 +648,8 @@ p {
 .relatos-cards {
   flex: 1;
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: center;
   padding: 40px 0;
   gap: 20px;
 }
@@ -670,9 +671,24 @@ p {
 
 
 .relatos-text{
-  text-align: center;
-  padding: 5px;
+  text-align: start;
+  padding: 20px;
+
 }
+
+.relatos-text p {
+  color: var(--color-gray-dark);
+}
+
+.relatos-name {
+  padding: 10px;
+}
+
+.relatos-name h2{
+  padding-top: 16px;
+  font-size: 16px;
+}
+
 
 .relatos-title {
   color: var(--color-black);
@@ -685,12 +701,17 @@ p {
   color: var(--color-yellow);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 48rem) {
   .relatos-content {
     max-width: 1218px;
   }
 }
 
+@media (min-width: 1024px){
+  .relatos-cards {
+  flex-wrap: nowrap;
+}
+}
 /* Frete */
 
 .frete {

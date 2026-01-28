@@ -108,14 +108,7 @@ body {
   color: transparent;
 }
 
-/* .badge {
-  display: inline-block;
-  color: #ff6a00;
-  font-weight: bold;
-  font-size: 1rem;
-} */
-
-h1 {
+#hero h1 {
   font-size: 38px;
   line-height: 1.2;
   margin-bottom: 20px;
@@ -125,7 +118,7 @@ h1 {
  background: linear-gradient(90deg, #ffcc00, #ffea00);
 }
 
-p {
+#hero p {
   font-size: 16px;
   color: #ccc;
   margin-bottom: 25px;
@@ -137,18 +130,12 @@ p {
   height: 100vh;
 }
 
-img.hero-vector {
-  
-}
-
 img.product-image {
   position: absolute;
   z-index: 1;
-  transform: translateX(-85%);
+  transform: translateX(-100%);
 }
 
-
-/* Responsivo */
 @media (max-width: 64rem) {
   .hero {
     height: auto;
@@ -242,44 +229,60 @@ img.product-image {
 /* sobre */
 
 .sobre {
+  display: flex;
+}
+
+#sobre p {
+  color: var(--color-gray);
+  font-size: 0.8rem;
 }
 
 .sobre-content { 
-    flex: 1;
-    margin: auto;
-    max-width: 1218px;
-  }
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.product-stamp {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .product-stamp img {
-  margin: auto;
-  padding: 0;
-  position: relative;
-  width: 100%;
+    height: 20rem;
 }
 
 .content-on {
-  max-width: 500px;
   text-align: start;
-  padding: 10px 65px; 
   display: flex;
   flex-direction: column;
-  gap: 10px;
-  margin-top: -30px;
-  position: relative;
-  margin: auto;
+  width: 50%;
+  height: 100%;
+  padding-bottom: 3rem;
+  gap: 1rem;
 }
+
 @media (min-width: 768px) {
-  .content-on {
-    max-width: 1218px;
-    flex-wrap: wrap;
+  .sobre-content {
+    flex-direction: row;
+    gap: 4rem;
   }
-  .sobre-content { 
-    display: flex;
+  .content-on {
+    width: 40%;
+    height: 100%;
+    padding: 2rem 0;
+  }
+  .product-stamp {
+    width: 50%;
   }
   .product-stamp img {
-    height: 100%;
-    width: 500px;
-}
+    width: 100%;
+    object-fit: contain;
+  }
 }
 
 /* About */
@@ -763,4 +766,58 @@ img.product-image {
     flex-direction: row;
     align-items: center;
   }
+}
+
+/* FAQ */
+
+
+.faq {
+  width: 100%;
+  max-width: 600px;
+  text-align: center;
+}
+
+.faq-tag {
+  color: #f7d600;
+  font-size: 12px;
+  letter-spacing: 2px;
+}
+
+.faq h1 {
+  margin: 10px 0 30px;
+  font-size: 28px;
+}
+
+.faq-list details {
+  background: #fff;
+  color: #000;
+  border-radius: 6px;
+  margin-bottom: 12px;
+  overflow: hidden;
+}
+
+.faq-list summary {
+  padding: 15px 20px;
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-list summary::after {
+  content: "▾";
+  font-size: 14px;
+  transition: transform 0.3s ease;
+}
+
+.faq-list details[open] summary::after {
+  transform: rotate(180deg);
+}
+
+.faq-list p {
+  padding: 0 20px 15px;
+  font-size: 14px;
+  color: #444;
 }

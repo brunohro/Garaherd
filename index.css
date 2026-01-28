@@ -37,6 +37,7 @@
   font-weight: lighter;
   box-shadow: 0rem 0.5rem 0rem var(--color--shadow-yellow);
   font-weight: bold;
+  max-width: 30rem;
 }
 
 body {
@@ -530,64 +531,67 @@ img.product-image {
 }
 
 
-
 /* ingredients */
 
 .ingredients {
   background-color: var(--color-white);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .ingredients-content {
   color: var(--color-black);
-  max-width: 500px;
-  padding: 60px 65px;
   display: flex;
   flex-direction: column;
-  margin: auto;
-  gap: 60px;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+  padding: 4rem 0;
 }
 
 .ingredients-title{
-  flex: 1;
   text-align: center;
-  max-width: 742px;
-  margin: 0 auto;
   color: var(--color-black);
+  max-width: 40rem;
+  padding: 0 1rem;
 }
 
 .ingredients-cards {
-  flex: 1;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px;
-  margin: 0;
+  gap: 1rem;
 }
 
 .ingredients-card {
   background-color: var(--color-black-light);
   color: var(--color-white);
-  border-radius: 12px;
-  max-width: 320px;
+  border-radius: 1rem;
+  max-width: 20rem;
   text-align: center;
-  padding: 70px 30px;
+  padding: 4rem 1rem;
+  position: relative;
 }
 
-.button-ingredients {
-  max-width: 396px;
-  margin: auto;
+.ingredient-image {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  top:0;
+  width: 7rem;
 }
 
-.button-ingredients:hover {
-  transform: scale(1.05);
+.ingredients-card p {
+  color: var(--color-gray);
+  margin-top: 1rem;
+  font-size: 1rem;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 64rem) {
   .ingredients-content {
-    max-width: 1216px;
+    max-width: 80rem;
   }
 }
-
 
 /* relatos */
 
@@ -874,4 +878,48 @@ img.product-image {
   .faq-info {
   max-width: 1050px;
 }
+}
+
+/* Footer */ 
+
+.navigation {
+  background-color: var(--color-yellow);
+  color: var(--color-black);
+  display: flex;
+}
+
+.navigation nav {
+  max-width: 1218px;
+  margin: auto;
+  gap: 1rem;
+  padding: 1.5rem;
+}
+
+.navigation a {
+  text-decoration: none;
+  color: inherit;
+  transition: none;
+  padding: 1rem;
+}
+
+.footer-text p{
+  color: var(--color-white);
+  text-align: center;
+  max-width: 1008px;
+  margin: auto;
+  padding: 1rem;
+}
+
+.footer-reserved {
+  background-color: var(--color-white);
+}
+
+.footer-reserved-content {
+  padding: 1rem;
+}
+
+.footer-reserved-content p {
+  color: var(--color-black);
+  padding: 0.5rem;
+  text-align: center;
 }

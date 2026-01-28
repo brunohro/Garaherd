@@ -14,4 +14,5 @@ loadSection("relatos", "sections/relatos.html");
 loadSection("frete", "sections/frete.html");
 loadSection("ofertas", "sections/ofertas.html");
 loadSection("faq", "sections/faq.html");
+loadSection("footer", "sections/footer.html");
 

@@ -792,6 +792,9 @@ img.product-image {
 }
 
 .faq-content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
   max-width: 1218px;
   margin: auto;
   text-align: center;
@@ -799,7 +802,15 @@ img.product-image {
 }
 
 .faq-info {
-  max-width: 500px;
+  max-width: 400px;
+  align-items: center;
+  margin: auto;
+}
+
+.faq-content a {
+  max-width: 396px;
+  align-items: center;
+  margin: auto;
 }
 
 .faq-tag {
@@ -851,4 +862,16 @@ img.product-image {
   padding: 0 20px 15px;
   font-size: 14px;
   color: #444;
+}
+
+@media (min-width: 48rem) {
+  .faq-info {
+  max-width: 650px;
+}
+}
+
+@media (min-width: 64rem) {
+  .faq-info {
+  max-width: 1050px;
+}
 }
